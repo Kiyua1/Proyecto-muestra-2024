@@ -1,0 +1,463 @@
+@media (max-width:768px){
+    body{
+        width: 95%;
+    }
+}
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #333333;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    background-color: #28292c;
+    height: 3cm;
+    width: 100%;
+    padding: 5px;
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+}
+#bane{
+    font-size: 24px;
+    width: 100%;;
+    height: 120px;
+}
+#ban{
+    display: flex;
+    list-style: none;
+}
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pestaña{
+list-style: none;
+display: flex;
+justify-content: space-around;
+}
+.pestaña li a{
+    display: block;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+}
+.pestaña li:hover{
+    background-color: #2b2b2b;
+}
+.pestaña li:hover .pestaña-conte{
+    display: block;
+}
+.pestaña-conte{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 10%;
+    background-color: #2b2b2b;
+}
+.pestaña-conte li:hover{
+    background-color: #424242;
+}
+.pestaña-conte li a {
+    display: block;
+    color: white;
+    padding: 15px;
+}
+#img{
+    width: 100%;
+    height: 20vh;
+}
+.prima{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#titulo{
+    font-size: xx-large;
+    text-align: center;   
+}
+
+
+
+footer{
+    background-color: #121212;;  
+    flex-grow: 1;
+    text-align: center;
+    height: 100%;
+    
+}
+h5{
+   color: rgb(82, 80, 80);
+}
+h4{
+    color: rgb(82, 80, 80);
+ }
+
+
+.imo{
+    height: 40vh ;
+}
+ .producto {
+  background: rgb(161, 161, 161);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+    width: 40vh;
+    height: 65vh;
+    -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,1);
+    box-shadow: 10px 10px 20px 0px rgba(0,0,0,1);
+    cursor: pointer;
+
+}
+
+.nombre {
+    color: #121212;
+    font-size: 24px;
+    margin: 15px 0;
+}
+.precio {
+    font-size: 20px;
+    color: #1a632b;
+    margin-bottom: 15px;
+}
+
+@media (max-width:768px){
+    .prima .produ img{
+        width: 95%;
+    }
+}
+
+
+
+a{
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+}
+h3{
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+}
+p{
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+}
+/* codigo cambiar tema */
+
+.toggle-switch {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    --light: #d8dbe0;
+    --dark: #28292c;
+    --link: rgb(27, 129, 112);
+    --link-hover: rgb(24, 94, 82);
+  }
+  
+  .switch-label {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background-color: var(--dark);
+    border-radius: 25px;
+    cursor: pointer;
+    border: 3px solid var(--dark);
+  }
+  
+  .checkbox {
+    position: absolute;
+    display: none;
+  }
+  
+  .slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .checkbox:checked ~ .slider {
+    background-color: var(--light);
+  }
+  
+  .slider::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    -webkit-box-shadow: inset 12px -4px 0px 0px var(--light);
+    box-shadow: inset 12px -4px 0px 0px var(--light);
+    background-color: var(--dark);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .checkbox:checked ~ .slider::before {
+    -webkit-transform: translateX(50px);
+    -ms-transform: translateX(50px);
+    transform: translateX(50px);
+    background-color: var(--dark);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+/*codigo busqueda */
+.group {
+    display: flex;
+    line-height: 28px;
+    align-items: end;
+    max-width: 190px;
+    justify-content: space-around;
+   border-radius: 5px;
+  }
+  
+  .input {
+    width: 25%;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: 0.3s ease;
+  }
+  
+  .input::placeholder {
+    color: #9e9ea7;
+  }
+  
+  .input:focus,
+  input:hover {
+    outline: none;
+    border-color: rgba(0, 48, 73, 0.4);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgb(0 48 73 / 10%);
+  }
+  
+  .icon {
+    position: absolute;
+    left: 1rem;
+    fill: #9e9ea7;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  /*codigo para carrito*/
+.btn-cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+    position: relative;
+  }
+  
+  .btn-cart::after {
+    content: attr(data-quantity);
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    font-size: 15px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s linear;
+    top: 115%;
+  }
+  
+  .icon-cart {
+    width: 24.38px;
+    height: 30.52px;
+    transition: .2s linear;
+  }
+  
+  .icon-cart path {
+    fill: rgb(255, 255, 255);
+    transition: .2s linear;
+  }
+  
+  .btn-cart:hover > .icon-cart {
+    transform: scale(1.2);
+  }
+  
+  .btn-cart:hover > .icon-cart path {
+    fill: rgb(231, 204, 240);
+  }
+  
+  .btn-cart:hover::after {
+    visibility: visible;
+    opacity: 1;
+    top: 105%;
+  }
+  
+  .quantity {
+    display: none;
+  }
+  /*LOGIN*/
+  /* From Uiverse.io by vinodjangid07 */ 
+.tooltip-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  padding: 11px 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  border: 1px solid rgb(211, 211, 211);
+}
+
+.text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+}
+.svgIcon {
+  width: 16px;
+  height: auto;
+}
+.tooltip {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.3em 0.6em;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+  color: rgb(34, 34, 34);
+}
+
+.tooltip::before {
+  position: absolute;
+  content: "";
+  height: 0.6em;
+  width: 0.6em;
+  bottom: -0.2em;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  background-color: rgb(255, 255, 255);
+}
+
+.tooltip-container:hover .tooltip {
+  top: -100%;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+  
+  /* modal */
+  body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo del fondo del modal */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+/* Estilo del contenido del modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 400px;
+}
+
+/* Estilo del botón para cerrar el modal */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilo del artículo */
+.producto {
+    text-align: center;
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.precio {
+    color: green;
+    font-size: 20px;
+    margin-top: 10px;
+}
+/*Botob para agregar*/
+/* From Uiverse.io by felipesntr */ 
+button {
+    border: 2px solid #7f8c92;
+    background-color: #5d6c74;
+    border-radius: 0.9em;
+    cursor: pointer;
+    padding: 0.8em 1.2em 0.8em 1em;
+    transition: all ease-in-out 0.2s;
+    font-size: 16px;
+  }
+  
+  button span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  button:hover {
+    background-color: #272a2e;
+  }
+  

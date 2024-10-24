@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <title>VIKKOR</title>
+</head>
+<body>
+    <script src="menu.js"></script>
+
+    
+    
+    <header>
+         <nav class="head">
+            <div id="ban">
+                <img  src="logoblanco.png" alt="logo" id="bane">
+            </div>
+            <ul class="pestaña">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a>
+                    <ul class="pestaña-conte">
+                        <li><a href="remeras.html">Remeras</a></li>
+                        <li><a href="#">Buzos</a></li>
+                        <li><a href="#">Pantalones</a></li>
+                        <li><a href="#">Camisas</a></li>
+                        <li><a href="#">Zapatillas</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Nuevo ingreso</a></li>
+                <li><a href="#">Accesorios</a></li>
+                <li><a href="#">Coctacto</a></li>
+            </ul>
+                 <!-- BUSCADOR-->
+  <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
+   
+  </svg>
+  <input class="input" type="buscar" placeholder="buscar" />
+         </nav>
+
+         <nav class="head2">
+           
+<div class="group">
+  <!--LOGIN-->
+  <a href="login.html">
+<div class="tooltip-container">
+  <span class="text">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 95 114"
+      class="svgIcon"
+    >
+      <rect fill="black" rx="28.5" height="57" width="57" x="19"></rect>
+      <path
+        fill="black"
+        d="M0 109.5C0 83.2665 21.2665 62 47.5 62V62C73.7335 62 95 83.2665 95 109.5V114H0V109.5Z"
+      ></path>
+    </svg>
+</div>
+</a>
+
+  <!--CARRITO-->
+  <div>
+  <button data-quantity="0" class="btn-cart">
+    <svg class="icon-cart" viewBox="0 0 24.38 30.52" height="30.52" width="24.38" xmlns="http://www.w3.org/2000/svg">
+      <title>icon-cart</title>
+      <path transform="translate(-3.62 -0.85)" d="M28,27.3,26.24,7.51a.75.75,0,0,0-.76-.69h-3.7a6,6,0,0,0-12,0H6.13a.76.76,0,0,0-.76.69L3.62,27.3v.07a4.29,4.29,0,0,0,4.52,4H23.48a4.29,4.29,0,0,0,4.52-4ZM15.81,2.37a4.47,4.47,0,0,1,4.46,4.45H11.35a4.47,4.47,0,0,1,4.46-4.45Zm7.67,27.48H8.13a2.79,2.79,0,0,1-3-2.45L6.83,8.34h3V11a.76.76,0,0,0,1.52,0V8.34h8.92V11a.76.76,0,0,0,1.52,0V8.34h3L26.48,27.4a2.79,2.79,0,0,1-3,2.44Zm0,0"></path>
+    </svg>
+    <span class="quantity"></span>
+  </button>
+</div>
+</div>
+
+<!--agregar-->
+<a href="adminboard.html">
+<button>
+  <span>
+    <svg
+      height="24"
+      width="24"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z" fill="currentColor"></path>
+    </svg>
+    Agregar
+  </span>
+</button>
+</a>
+         </nav>
+    </header>
+
+        <div id="banner">
+            <img id="img" src="Lighthouse.jpg" alt="">
+        </div>
+
+        <main>
+            <nav>
+                <h3 id="titulo"> FLORECER NORDICO: <br> MODA EN LA ERA VIKINGA  </h3> 
+                
+                <section class="prima">
+                   
+                    <article class="arti" id="myBtn">
+                  <div class="producto" id="myBtn">
+                    <img src="madkat.png" alt="">
+                    <div class="nombre"><p>Remera negra madkat</p></div>
+                    <div class="precio"><p>$27.000</p></div>
+                    <!---modal-->
+                    <div id="myModal" class="modal">
+                      <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="producto">
+                            <img src="https://via.placeholder.com/150" alt="Nombre del Producto">
+                            <h2>Nombre del Producto</h2>
+                            <p class="precio">$99.99</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!---fin modal-->
+                  </div>
+            </div>
+
+            </article>
+            
+            <article class="arti">
+                <div class="producto">
+                  <img src="madkat.png" alt="madkat" id="imo">
+                  <div class="nombre"><p>Remera negra madkat</p></div>
+                  <div class="precio"><p>$27.000</p></div>
+                </div>
+          </div>
+
+          </article>
+
+          <article class="arti">
+            <div class="producto">
+              <img src="madkat.png" alt="madkat" id="imo">
+              <div class="nombre"><p>Remera negra madkat</p></div>
+              <div class="precio"><p>$27.000</p></div>
+            </div>
+      </div>
+
+      </article>
+
+      <article class="arti">
+        <div class="producto">
+          <img src="madkat.png" alt="madkat" id="imo">
+          <div class="nombre"><p>Remera negra madkat</p></div>
+          <div class="precio"><p>$27.000</p></div>
+        </div>
+  </div>
+
+  </article>
+                </section>
+                </nav>
+        </main>
+
+        <div class="toggle-switch">
+            <label class="switch-label">
+              <input type="checkbox" class="checkbox">
+              <span class="slider"></span>
+            </label>
+          </div>  
+    <footer>
+        <h4>Trabajo para muestra institucional: Tecnica 7 Jose Hernandezde de Avellaneda. Hecho por Diego Ivan Caceres,Santiago Mijail Calaza y Alejo Agustin Eugenio de 6to 1ra Programacion</h4>
+        <h5>© 2024, VIKKOR, Inc. Todos los derechos reservados.VIKKOR, el logotipo de VIKKOR,son marcas comerciales o marcas registradas de VIKKOR, Inc. tanto en Argentina como en el resto del mundo. Otras marcas o nombres de productos son marcas comerciales de sus respectivos propietarios.   </h5>
+    </footer>
+
+
+</body>
+</html>
